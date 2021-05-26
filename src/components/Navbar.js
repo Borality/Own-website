@@ -1,25 +1,28 @@
 import React, { useState } from 'react'
-import {AppBar, Tab, Tabs, Toolbar, Typography, Icon} from '@material-ui/core';
+import {AppBar, Tab, Tabs, Toolbar, Typography} from '@material-ui/core';
 import ContactsIcon from '@material-ui/icons/Contacts';
 import HomeIcon from '@material-ui/icons/Home';
 import BarChartIcon from '@material-ui/icons/BarChart';
+import { Link, useHistory } from 'react-router-dom'
 
 export default function Navbar() {
+    /*To add for tab indicator
     const [value, setValue] = useState(0);
 
     const handleClickTab = (e, newValue) => {
         setValue(newValue)
     }
+    */
 
     return (
         <div>
-            <AppBar color = "primary">
+            <AppBar color = "primary" position="sticky">
                 <Toolbar>
                 <Typography> Charles Trangay </Typography>
-                <Tabs onChange = {handleClickTab} indicatorColor = 'secondary' value = {value}>
-                    <Tab icon = {<HomeIcon/>} label = "Home" /> 
-                    <Tab icon = {<ContactsIcon/>} label = "Contact" /> 
-                    <Tab icon = {<BarChartIcon/>} label = "In progress" /> 
+                <Tabs>
+                    <Tab icon = {<HomeIcon/>} label = "Home" component = {Link} to = "/"/> 
+                    <Tab icon = {<ContactsIcon/>} label = "Contact" component = {Link} to = "/Contact"/> 
+                    <Tab icon = {<BarChartIcon/>} label = "In progress"/> 
                 </Tabs>
 
                 </Toolbar>
