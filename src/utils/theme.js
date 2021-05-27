@@ -9,6 +9,11 @@ const theme = createMuiTheme({
             main: '#FF3366',
         }
     },
+    typography: {
+        fontFamily: [
+          'Varela Round',
+        ].join(','),
+    },
 });
 
 export default theme;

@@ -4,6 +4,7 @@ import ContactsIcon from '@material-ui/icons/Contacts';
 import HomeIcon from '@material-ui/icons/Home';
 import BarChartIcon from '@material-ui/icons/BarChart';
 import { Link, useHistory } from 'react-router-dom'
+import GraphicEqIcon from '@material-ui/icons/GraphicEq';
 
 export default function Navbar() {
     /*To add for tab indicator
@@ -18,7 +19,7 @@ export default function Navbar() {
         <div>
             <AppBar color = "primary" position="sticky">
                 <Toolbar>
-                <Typography> Charles Trangay </Typography>
+                <GraphicEqIcon/>
                 <Tabs>
                     <Tab icon = {<HomeIcon/>} label = "Home" component = {Link} to = "/"/> 
                     <Tab icon = {<ContactsIcon/>} label = "Contact" component = {Link} to = "/Contact"/> 
