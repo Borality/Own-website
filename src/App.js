@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import theme from './utils/theme';
 import Homepage from './components/Homepage';
 import Contact from './components/Contact';
+import Projects from './components/Projects';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route exact path="/" component = {Homepage} />
           <Route path = "./Homepage" component = {Homepage}/>
           <Route path = "/Contact" component = {Contact} />
+          <Route path = "/Projects" component = {Projects} />
           <ThemeProvider theme = {theme}>
             <Navbar/>
           </ThemeProvider>
