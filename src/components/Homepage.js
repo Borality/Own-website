@@ -30,7 +30,7 @@ export default function Homepage() {
             <Navbar/>
             <Grid container justify="center" alignItems="center">
                 <Box my = {43.5} mx = {20} alignItems="center" justifyContent="center" textAlign="center" boxShadow={5} bgcolor = "#1e88e5" borderRadius={16}>
-                    <Typography style = {classes.title}>I am Charles Trangay</Typography>
+                    <Typography style = {classes.title}>I am Charles</Typography>
                     <Typography style = {classes.text} color = "primary" >A software developer.</Typography>
                     <Typography style = {classes.text} color = "primary" >Take a look around with the tabs on top!</Typography>
                 </Box>
