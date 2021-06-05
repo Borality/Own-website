@@ -46,10 +46,10 @@ export default function Projects() {
                                 </CardContent>
                                 <Grid container justify="center">
                                     <Box>
-                                        <Button href="https://github.com/Borality/brochure-app" variant = "outlined">Code</Button>
+                                        <Button href="https://github.com/Borality/brochure-app" target="_blank" variant = "outlined">Code</Button>
                                     </Box>
                                     <Box ml = {1}>
-                                        <Button href="https://brochurewebsite.netlify.app/" variant = "outlined">Website</Button>
+                                        <Button href="https://brochurewebsite.netlify.app/" target="_blank" variant = "outlined">Website</Button>
                                     </Box>
                                 </Grid>
                             </CardActionArea>
@@ -73,7 +73,7 @@ export default function Projects() {
                                 </CardContent>
                                 <Grid container justify="center">
                                     <Box>
-                                        <Button href="https://github.com/Borality/WeCook" variant = "outlined">Code</Button>
+                                        <Button href="https://github.com/Borality/WeCook" target="_blank" variant = "outlined">Code</Button>
                                     </Box>
                                 </Grid>                          
                             </CardActionArea>
