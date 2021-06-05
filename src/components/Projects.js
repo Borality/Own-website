@@ -63,7 +63,7 @@ export default function Projects() {
                                 <CardContent>
                                 <Typography gutterBottom component = "div">
                                     <Box fontWeight = "fontWeightBold" fontSize={25}>
-                                        We Cook
+                                        WeCook website
                                     </Box>
                                 </Typography>
                                 <Typography variant="body2" color="textSecondary" component="p">
