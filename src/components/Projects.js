@@ -14,6 +14,11 @@ import projectBrochure from "../images/projectBrochure.PNG";
 import weCook from "../images/weCook.PNG";
 import { makeStyles } from "@material-ui/core/styles";
 import { Link, useHistory } from "react-router-dom";
+import {
+  createMuiTheme,
+  responsiveFontSizes,
+  ThemeProvider,
+} from "@material-ui/core/styles";
 
 const useStyles = makeStyles({
   root: {
@@ -24,9 +29,11 @@ const useStyles = makeStyles({
 const styles = {
   title: {
     color: "#14248A",
-    fontSize: "4rem",
   },
-}
+};
+
+let theme = createMuiTheme();
+theme = responsiveFontSizes(theme);
 
 const handleClick = () => {};
 
@@ -36,17 +43,18 @@ export default function Projects() {
   return (
     <div style={{ backgroundColor: "#ededed", minHeight: "100vh" }}>
       <Navbar />
-      <Box style={classes2.title} my={1} textAlign="center">
-        Projects
-      </Box>
+      <ThemeProvider theme={theme}>
+        <Box style={classes2.title} mt={17} textAlign="center">
+          <Typography variant="h1">Projects</Typography>
+        </Box>
+      </ThemeProvider>
 
-      <Box pt={7}>
+      <Box pt={7} >
         <Grid container justify="center">
           <Box mx={2} my={2}>
             <Card className={classes.root}>
-              <CardActionArea>
+              <CardActionArea disableTouchRipple>
                 <CardMedia
-                  disableTouchRipple="true"
                   component="img"
                   height="140"
                   image={projectBrochure}
@@ -93,9 +101,8 @@ export default function Projects() {
 
           <Box mx={2} my={2}>
             <Card className={classes.root}>
-              <CardActionArea>
+              <CardActionArea disableTouchRipple>
                 <CardMedia
-                  disableTouchRipple="true"
                   component="img"
                   height="140"
                   image={weCook}
