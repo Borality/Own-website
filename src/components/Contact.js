@@ -27,7 +27,7 @@ export default function Contact() {
         <div style={{backgroundColor: "#ededed", width: "100%", minHeight: "100vh"}}>
             <Navbar/>
             <Grid container justify = 'center' alignItems="center">
-                <Box my = {40} mx = {20} alignItems="center" justifyContent="center" textAlign="center" boxShadow={3} bgcolor = "#1e88e5" borderRadius={16}>
+                <Box my = {40} mx = {20} alignItems="center" justifyContent="center" textAlign="center" border={0}>
                     <Typography style = {classes.title}>Contact me</Typography>
                     <Typography style = {classes.text}><EmailIcon style={{ fontSize: "2.5rem" }}/>Email: charles.trangay11@gmail.com</Typography>
                     <Typography style = {classes.text}><PhoneIcon style={{ fontSize: "2.5rem" }}/>phone: 732-877-4032</Typography>

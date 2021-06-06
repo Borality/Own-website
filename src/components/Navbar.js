@@ -23,11 +23,13 @@ export default function Navbar() {
             <AppBar color = "primary" position="sticky">
                 <Toolbar>
                 <GraphicEqIcon/>
+                <div style = {{margin: "auto"}}>
                 <Tabs>
                     <Tab icon = {<HomeIcon/>} label = "Home" component = {Link} to = "/"/> 
                     <Tab icon = {<ContactsIcon/>} label = "Contact" component = {Link} to = "/Contact"/> 
                     <Tab icon = {<BarChartIcon/>} label = "Projects" component = {Link} to = "/Projects"/> 
                 </Tabs>
+                </div>
                 </Toolbar>
             </AppBar>
             </ThemeProvider>
