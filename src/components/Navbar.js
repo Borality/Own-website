@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
-import {AppBar, Tab, Tabs, Toolbar, Typography} from '@material-ui/core';
+import React from 'react'
+import {AppBar, Tab, Tabs, Toolbar} from '@material-ui/core';
 import ContactsIcon from '@material-ui/icons/Contacts';
 import HomeIcon from '@material-ui/icons/Home';
 import BarChartIcon from '@material-ui/icons/BarChart';
-import { Link, useHistory } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import GraphicEqIcon from '@material-ui/icons/GraphicEq';
 import { ThemeProvider } from '@material-ui/styles';
 import theme from '../utils/theme';

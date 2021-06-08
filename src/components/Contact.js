@@ -5,6 +5,7 @@ import Box from "@material-ui/core/Box";
 import EmailIcon from "@material-ui/icons/Email";
 import PhoneIcon from "@material-ui/icons/Phone";
 import GitHubIcon from "@material-ui/icons/GitHub";
+import LastComponent from "./LastComponent";
 import {
   createMuiTheme,
   responsiveFontSizes,
@@ -15,6 +16,7 @@ const styles = {
   title: {
     overflowWrap: "normal",
     color: "#E8E8E8",
+    fontWeight: "600"
   },
   text: {
     overflowWrap: "normal",
@@ -62,6 +64,7 @@ export default function Contact() {
           </ThemeProvider>
         </Box>
       </Grid>
+      <LastComponent/>
     </div>
   );
 }

@@ -5,7 +5,6 @@ import {
   CardActionArea,
   CardContent,
   CardMedia,
-  Container,
   Grid,
   Typography,
 } from "@material-ui/core";
@@ -14,7 +13,7 @@ import Navbar from "./Navbar";
 import projectBrochure from "../images/projectBrochure.PNG";
 import weCook from "../images/weCook.PNG";
 import { makeStyles } from "@material-ui/core/styles";
-import { Link, useHistory } from "react-router-dom";
+import LastComponent from "./LastComponent";
 import {
   createMuiTheme,
   responsiveFontSizes,
@@ -30,20 +29,21 @@ const useStyles = makeStyles({
 const styles = {
   title: {
     color: "#E8E8E8",
+    fontWeight: "600"
   },
 };
 
 let theme = createMuiTheme();
 theme = responsiveFontSizes(theme);
 
-const handleClick = () => {};
 
 export default function Projects() {
   const classes = useStyles();
   const classes2 = styles;
   return (
-    <div style={{ backgroundColor: "#ededed", minHeight: "100vh" }}>
+    <div style={{ minHeight: "100vh" }}>
       <Navbar />
+      <Box style={{ backgroundColor: "#ededed"}}>
       <ThemeProvider theme={theme}>
         <Grid container justify = "center">
         <Box px = {1.4} py = {1.4} mt={25} textAlign="center" style = {{backgroundColor: "#303030"}} >
@@ -52,7 +52,7 @@ export default function Projects() {
         </Grid>
       </ThemeProvider>
 
-      <Box pt={7} >
+      <Box pt={7} pb ={7}>
         <Grid container justify="center">
           <Box mx={2} my={2}>
             <Card className={classes.root}>
@@ -145,6 +145,8 @@ export default function Projects() {
           </Box>
         </Grid>
       </Box>
+      </Box>
+      <LastComponent/>
     </div>
   );
 }
