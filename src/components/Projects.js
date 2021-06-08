@@ -5,6 +5,7 @@ import {
   CardActionArea,
   CardContent,
   CardMedia,
+  Container,
   Grid,
   Typography,
 } from "@material-ui/core";
@@ -28,7 +29,7 @@ const useStyles = makeStyles({
 
 const styles = {
   title: {
-    color: "#14248A",
+    color: "#E8E8E8",
   },
 };
 
@@ -44,9 +45,11 @@ export default function Projects() {
     <div style={{ backgroundColor: "#ededed", minHeight: "100vh" }}>
       <Navbar />
       <ThemeProvider theme={theme}>
-        <Box style={classes2.title} mt={17} textAlign="center">
-          <Typography variant="h1">Projects</Typography>
+        <Grid container justify = "center">
+        <Box px = {1.4} py = {1.4} mt={25} textAlign="center" style = {{backgroundColor: "#303030"}} >
+          <Typography style={classes2.title} variant="h1">Projects</Typography>
         </Box>
+        </Grid>
       </ThemeProvider>
 
       <Box pt={7} >

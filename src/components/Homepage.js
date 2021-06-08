@@ -12,11 +12,11 @@ import {
 const styles = {
   title: {
     overflowWrap: "normal",
-    color: "#14248A",
+    color: "#E8E8E8",
   },
   text: {
     overflowWrap: "normal",
-    color: "#14248A",
+    color: "#282828",
   },
 };
 
@@ -40,9 +40,11 @@ export default function Homepage() {
           border={0}
         >
           <ThemeProvider theme={theme}>
+            <Box px = {1.4} py = {1.4} my = {2} style = {{backgroundColor: "#303030"}}>
             <Typography style={classes.title} variant="h1">
-              I am Charles
+              Charles Trangay
             </Typography>
+            </Box>
             <Typography style={classes.text} variant="h4">
               A software developer
             </Typography>

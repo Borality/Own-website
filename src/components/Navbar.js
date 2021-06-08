@@ -25,9 +25,9 @@ export default function Navbar() {
                 <GraphicEqIcon/>
                 <div style = {{margin: "auto"}}>
                 <Tabs>
-                    <Tab icon = {<HomeIcon/>} label = "Home" component = {Link} to = "/"/> 
-                    <Tab icon = {<ContactsIcon/>} label = "Contact" component = {Link} to = "/Contact"/> 
-                    <Tab icon = {<BarChartIcon/>} label = "Projects" component = {Link} to = "/Projects"/> 
+                    <Tab disableTouchRipple icon = {<HomeIcon/>} label = "Home" component = {Link} to = "/"/> 
+                    <Tab disableTouchRipple icon = {<ContactsIcon/>} label = "Contact" component = {Link} to = "/Contact"/> 
+                    <Tab disableTouchRipple icon = {<BarChartIcon/>} label = "Projects" component = {Link} to = "/Projects"/> 
                 </Tabs>
                 </div>
                 </Toolbar>

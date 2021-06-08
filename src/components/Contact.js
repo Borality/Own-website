@@ -14,11 +14,11 @@ import {
 const styles = {
   title: {
     overflowWrap: "normal",
-    color: "#14248A",
+    color: "#E8E8E8",
   },
   text: {
     overflowWrap: "normal",
-    color: "#14248A",
+    color: "#282828",
   },
 };
 
@@ -42,20 +42,22 @@ export default function Contact() {
           border={0}
         >
           <ThemeProvider theme={theme}>
+            <Box px = {1.4} py = {1.4} my = {2} style = {{backgroundColor: "#303030"}}>
             <Typography style={classes.title} variant="h1">
-              Contact me
+              Reach me below
             </Typography>
+            </Box>
             <Typography style={classes.text} variant="h4">
               <EmailIcon style={{ fontSize: "2.5rem" }} />
               Email: charles.trangay11@gmail.com
             </Typography>
             <Typography style={classes.text} variant="h4">
               <PhoneIcon style={{ fontSize: "2.5rem" }} />
-              phone: 732-877-4032
+              Phone: 732-877-4032
             </Typography>
             <Typography style={classes.text} variant="h4">
               <GitHubIcon style={{ fontSize: "2.5rem" }} />
-              github: https://github.com/Borality
+              Github: https://github.com/Borality
             </Typography>
           </ThemeProvider>
         </Box>
