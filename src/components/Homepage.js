@@ -34,26 +34,23 @@ export default function Homepage() {
       <Navbar />
       <Grid container justify="center" alignItems="center" style={{ backgroundColor: "#ededed"}}>
         <Box
-          mt={40}
-          mb = {5}
-          mx={20}
+          mt={{xs:20, sm: 35, md: 40, lg: 40}}
+          mb = {{xs:30, sm: 20, md: 7, lg: 5}}
+          
           alignItems="center"
           justifyContent="center"
           textAlign="center"
-          border={0}
         >
           <ThemeProvider theme={theme}>
-            <Box px = {1.4} py = {1.4} my = {2} style = {{backgroundColor: "#303030"}}>
-            <Typography style={classes.title} variant="h1">
+            <Box px = {1.4} py = {1} my = {2} fontSize={{xs:35, sm: 60, md: 70, lg: 80}} style = {{backgroundColor: "#303030", color: "#E8E8E8", fontWeight: "600"}}>
               Charles Trangay
-            </Typography>
-            </Box>
-            <Typography style={classes.text} variant="h4">
+            </Box >
+            <Box fontSize={{xs:20, sm: 30, md: 30, lg: 30}} style = {{ color: "#282828"}}>
               A software developer
-            </Typography>
-            <Typography style={classes.text} variant="h4">
+            </Box>
+            <Box fontSize={{xs:20, sm: 30, md: 30, lg: 30}} style = {{ color: "#282828"}}>
               Take a look around!
-            </Typography>
+            </Box>
           </ThemeProvider>
         </Box>
       </Grid>

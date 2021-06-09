@@ -14,7 +14,7 @@ function App() {
         <Switch>
           <Route exact path="/" component = {Homepage} />
           <Route path = "/Own-website" component = {Homepage}/>
-          <Route path = "./Homepage" component = {Homepage}/>
+          <Route path = "/Homepage" component = {Homepage}/>
           <Route path = "/Contact" component = {Contact} />
           <Route path = "/Projects" component = {Projects} />
           <ThemeProvider theme = {theme}>

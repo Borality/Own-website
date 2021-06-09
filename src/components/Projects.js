@@ -46,13 +46,13 @@ export default function Projects() {
       <Box style={{ backgroundColor: "#ededed"}}>
       <ThemeProvider theme={theme}>
         <Grid container justify = "center">
-        <Box px = {1.4} py = {1.4} mt={25} textAlign="center" style = {{backgroundColor: "#303030"}} >
-          <Typography style={classes2.title} variant="h1">Projects</Typography>
+        <Box px = {1.4} py = {1} mt = {{xs:20, sm: 25, md: 35, lg: 35}} fontSize = {{xs:35, sm: 60, md: 70, lg: 80}} style = {{backgroundColor: "#303030", color: "#E8E8E8", fontWeight: "600"}}>
+          Projects
         </Box>
         </Grid>
       </ThemeProvider>
 
-      <Box pt={7} pb ={7}>
+      <Box py ={7}>
         <Grid container justify="center">
           <Box mx={2} my={2}>
             <Card className={classes.root}>
@@ -62,6 +62,8 @@ export default function Projects() {
                   height="140"
                   image={projectBrochure}
                   alt="pizza"
+                  style = {{objectFit: "cover",
+                  objectPosition: "top",}}
                 />
                 <CardContent>
                   <Typography gutterBottom component="div">
@@ -110,6 +112,8 @@ export default function Projects() {
                   height="140"
                   image={weCook}
                   alt="WeCook"
+                  style = {{objectFit: "cover",
+                  objectPosition: "top left",}}
                 />
                 <CardContent>
                   <Typography gutterBottom component="div">
