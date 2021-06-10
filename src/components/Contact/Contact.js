@@ -6,9 +6,9 @@ import Navbar from "../Navbar";
 export default function Contact() {
   return (
     <div>
-      <Navbar/>
-      <ContactComp1/>
-      <LastComponent/>
+      <Navbar />
+      <ContactComp1 />
+      <LastComponent />
     </div>
   );
 }

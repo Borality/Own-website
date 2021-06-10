@@ -1,29 +1,15 @@
-import {
-  Box,
-  Button,
-  Card,
-  CardActionArea,
-  CardContent,
-  CardMedia,
-  Grid,
-  Typography,
-} from "@material-ui/core";
+import { Box, Grid } from "@material-ui/core";
 import React from "react";
-import projectBrochure from "../../images/projectBrochure.PNG";
-import weCook from "../../images/weCook.PNG";
-import { makeStyles } from "@material-ui/core/styles";
-
-
 
 const styles = {
   title: {
     color: "#E8E8E8",
     fontWeight: "600",
-    backgroundColor: "#303030"
+    backgroundColor: "#303030",
   },
 };
 
-export default function ProjectsComp1() {;
+export default function ProjectsComp1() {
   const classes = styles;
   return (
     <div>

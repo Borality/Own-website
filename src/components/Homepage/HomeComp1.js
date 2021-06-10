@@ -10,7 +10,7 @@ export default function HomeComp1() {
         alignItems="center"
         style={{ backgroundColor: "#ededed" }}
       >
-        <Box my={{ xs: 10, sm: 26, md: 26, lg: 36 }} textAlign="center">
+        <Box mb={6} mt={{ xs: 10, sm: 26, md: 26, lg: 36 }} textAlign="center">
           <Box
             px={1.4}
             py={1}
@@ -25,13 +25,13 @@ export default function HomeComp1() {
             Charles Trangay
           </Box>
           <Box
-            fontSize={{ xs: 20, sm: 30, md: 35, lg: 40 }}
+            fontSize={{ xs: 17, sm: 25, md: 28, lg: 30 }}
             style={{ color: "#282828" }}
           >
             A software developer
           </Box>
           <Box
-            fontSize={{ xs: 20, sm: 30, md: 35, lg: 40 }}
+            fontSize={{ xs: 17, sm: 25, md: 28, lg: 30 }}
             style={{ color: "#282828" }}
           >
             Take a look around!
