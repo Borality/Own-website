@@ -5,7 +5,7 @@ import {Link as Link2} from 'react-router-dom'
 export default function LastComponent() {
   return (
     <div>
-      <Box py = {2} style={{ backgroundColor: "white", color: "#909090" }} display="flex" flexDirection="column">
+      <Box py = {3} style={{ backgroundColor: "white", color: "#909090" }} display="flex" flexDirection="column">
         <Grid container justify="center">
           <Box display="flex" flexDirection="row" fontSize={12}>
             <Box mx={1}>

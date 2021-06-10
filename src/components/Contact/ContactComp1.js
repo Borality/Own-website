@@ -1,16 +1,10 @@
 import React from "react";
-import Navbar from "./Navbar";
-import { Grid, Typography } from "@material-ui/core";
+import { Grid } from "@material-ui/core";
 import Box from "@material-ui/core/Box";
 import EmailIcon from "@material-ui/icons/Email";
 import PhoneIcon from "@material-ui/icons/Phone";
 import GitHubIcon from "@material-ui/icons/GitHub";
-import LastComponent from "./LastComponent";
-import {
-  createMuiTheme,
-  responsiveFontSizes,
-  ThemeProvider,
-} from "@material-ui/core/styles";
+
 
 const styles = {
   title: {
@@ -24,26 +18,23 @@ const styles = {
   },
 };
 
-let theme = createMuiTheme();
-theme = responsiveFontSizes(theme);
 
-export default function Contact() {
+export default function ContactComp1() {
   const classes = styles;
   return (
     <div
-      style={{ width: "100%", minHeight: "100vh" }}
+      style={{ width: "100%" }}
     >
-      <Navbar />
       <Grid container justify="center" alignItems="center" style={{ backgroundColor: "#ededed"}}>
+          {/* Don't go higher than 16 for smaller devices */}
         <Box
-          my={{xs:20, sm: 35, md: 40, lg: 40}}
+          my={{xs:10, sm: 26, md: 26, lg: 36}}
           mx="auto"
           alignItems="center"
           justifyContent="center"
           textAlign="center"
           border={0}
         >
-          <ThemeProvider theme={theme}>
             <Box px = {1.4} py = {1} my = {2} fontSize = {{xs:35, sm: 60, md: 70, lg: 80}} style = {{backgroundColor: "#303030", color: "#E8E8E8", fontWeight: "600"}}>
               Reach me below
             </Box>
@@ -59,10 +50,8 @@ export default function Contact() {
               <GitHubIcon style={{ fontSize: "2.5rem" }} />
               Github: https://github.com/Borality
             </Box>
-          </ThemeProvider>
         </Box>
       </Grid>
-      <LastComponent/>
     </div>
   );
 }

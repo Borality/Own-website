@@ -3,9 +3,9 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import './App.css';
 import Navbar from './components/Navbar';
 import theme from './utils/theme';
-import Homepage from './components/Homepage';
-import Contact from './components/Contact';
-import Projects from './components/Projects';
+import Homepage from './components/Homepage/Homepage';
+import Contact from './components/Contact/Contact';
+import Projects from './components/Projects/Projects';
 
 function App() {
   return (
