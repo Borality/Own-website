@@ -22,7 +22,7 @@ export default function ProjectsComp1() {
         <Box
           px={1.4}
           py={1}
-          my={{ xs: 2, sm: 16, md: 16, lg: 16 }}
+          mt={{ xs: 10, sm: 26, md: 26, lg: 36 }}
           fontSize={{ xs: 35, sm: 60, md: 70, lg: 80 }}
           style={classes.title}
           textAlign="center"

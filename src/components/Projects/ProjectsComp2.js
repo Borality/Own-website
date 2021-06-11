@@ -14,12 +14,17 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    maxWidth: 345,
+    maxWidth: 445,
+    transition: "0.4s ease-out",
     [theme.breakpoints.down("xs")]: {
       maxWidth: 280,
     },
+    "&:hover": {
+      transform: "translateY(-10px)"
+    },
   },
 }));
+
 
 export default function ProjectsComp2() {
   const classes = useStyles();
@@ -30,7 +35,7 @@ export default function ProjectsComp2() {
           <Grid container justify="center" spacing={2}>
             <Grid item xm={12}>
               <Box>
-                <Card className={classes.root}>
+                <Card className={classes.root} elevation = {10}>
                   <CardActionArea disableTouchRipple>
                     <CardMedia
                       component="img"
@@ -85,7 +90,7 @@ export default function ProjectsComp2() {
 
             <Grid item xm={12}>
               <Box>
-                <Card className={classes.root}>
+                <Card className={classes.root} elevation = {10}>
                   <CardActionArea disableTouchRipple>
                     <CardMedia
                       component="img"
