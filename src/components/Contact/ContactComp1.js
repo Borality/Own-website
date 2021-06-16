@@ -9,8 +9,8 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 
 const useStyles = makeStyles({
 	title: {
-		backgroundColor: "#303030",
-		color: "#E8E8E8",
+		//backgroundColor: "#303030",
+		color: "#202020",
 		fontWeight: "600",
 	},
 	text: {
@@ -50,8 +50,8 @@ export default function ContactComp1() {
 				>
 					{/* Setting responsive sizes for mobile fontSize, fontSize inherit is responsive */}
 					<Box
-						px={1.4}
-						py={1}
+						//px={1.4}
+						//py={1}
 						my={2}
 						fontSize={{ xs: 35, sm: 60, md: 70, lg: 80 }}
 						className={classes.title}
