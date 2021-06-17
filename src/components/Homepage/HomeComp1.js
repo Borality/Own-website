@@ -45,7 +45,6 @@ export default function HomeComp1() {
 						Charles Trangay
 					</Box>
 					<Text text="A software developer" />
-					<Text text="Take a look around" />
 				</Box>
 			</Grid>
 		</div>
