@@ -8,7 +8,7 @@ export default [
 		title: "Pizza brochure website",
 		description:
 			"This website was a redesign of a popular pizza website using HTML/CSS, Javascript and React.",
-		hrefWebsite: "https://brochurewebsite.netlify.app/",
+		hrefWebsite: "https://brochure-app.vercel.app/",
 		hrefCode: "https://github.com/Borality/brochure-app",
 	},
 	{
