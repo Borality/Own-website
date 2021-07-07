@@ -65,11 +65,11 @@ export default function ContactComp1() {
 						/>
 						<Text
 							text={"Phone: 732-877-4032"}
-							icon={<GitHubIcon fontSize="inherit" />}
+							icon={<PhoneIcon fontSize="inherit" />}
 						/>
 						<Text
 							text={"Github: https://github.com/Borality"}
-							icon={<PhoneIcon fontSize="inherit" />}
+							icon={<GitHubIcon fontSize="inherit" />}
 						/>
 					</Box>
 				</Box>
