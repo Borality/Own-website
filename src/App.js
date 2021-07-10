@@ -1,29 +1,29 @@
-import { ThemeProvider } from "@material-ui/styles";
+//React router
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import "./App.css";
+//Components
 import Navbar from "./components/Navbar";
-import theme from "./utils/theme";
-import Homepage from "./components/homepage/Homepage";
-import Contact from "./components/contact/Contact";
-import Projects from "./components/projects/Projects";
+import Footer from "./components/Footer";
+//Pages
+import {Home} from "./pages/index";
+import {Contact} from "./pages/index";
+import {Projects} from "./pages/index";
 
 function App() {
-  return (
-    <div>
-      <Router>
-        <Switch>
-          <Route exact path="/" component={Homepage} />
-          <Route path="/Own-website" component={Homepage} />
-          <Route path="/Homepage" component={Homepage} />
-          <Route path="/Contact" component={Contact} />
-          <Route path="/Projects" component={Projects} />
-          <ThemeProvider theme={theme}>
-            <Navbar />
-          </ThemeProvider>
-        </Switch>
-      </Router>
-    </div>
-  );
+	return (
+		<div>
+			<Router>
+				<Navbar />
+				<Switch>
+					<Route exact path="/" component={Home} />
+					<Route path="/Own-website" component={Home} />
+					<Route path="/Home" component={Home} />
+					<Route path="/Contact" component={Contact} />
+					<Route path="/Projects" component={Projects} />
+				</Switch>
+				<Footer />
+			</Router>
+		</div>
+	);
 }
 
 export default App;

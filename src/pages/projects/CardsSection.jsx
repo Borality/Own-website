@@ -6,9 +6,10 @@ import { Box, Grid } from "@material-ui/core";
 import CardProjects from "./CardProjects";
 //Card data
 import CardMakerList from "./Data";
-
+//CSS styles
+import { styles } from "./Projects.styles";
 const getCardMaker = (props) => {
-	//... is same thing as setting up all the prop values
+	//... is the same thing as setting up all the prop values
 	return (
 		<Grid item lg={6} md={12} style={{ maxWidth: 445 }}>
 			<CardProjects {...props}></CardProjects>
@@ -18,16 +19,13 @@ const getCardMaker = (props) => {
 
 //Have to set grid item size equal to card size otherwise grid item bigger
 export default function ProjectsComp2() {
+	const classes = styles;
+	const boxProps = {py:5}
+	const gridProps = {container: "true", justify:"center", spacing:2}
 	return (
-		<div
-			style={{
-				paddingTop: "50px",
-				paddingBottom: "50px",
-				backgroundColor: "#ededed",
-			}}
-		>
-			<Box style={{ backgroundColor: "#ededed" }}>
-				<Grid container justify="center" spacing={2}>
+		<div>
+			<Box {...boxProps} style={classes.background}>
+				<Grid {...gridProps}>
 					{CardMakerList.map((props) => getCardMaker(props))}
 				</Grid>
 			</Box>

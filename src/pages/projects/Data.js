@@ -1,3 +1,4 @@
+//Images
 import projectBrochure from "../../images/projectBrochure.PNG";
 import weCook from "../../images/weCook.PNG";
 //Stores data of the cards
