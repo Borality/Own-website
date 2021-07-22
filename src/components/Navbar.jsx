@@ -48,7 +48,7 @@ export default function Navbar() {
 		<div>
 			{/**ThemeProvider changes primary color or just add css styles */}
 			<ThemeProvider theme={theme}>
-				<AppBar color="primary" position="sticky">
+				<AppBar color="primary" position="sticky" elevation = {3}>
 					<Toolbar>
 						<Box margin={{ sm: "auto" }}>
 							<Tabs>
