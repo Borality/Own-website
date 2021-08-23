@@ -21,7 +21,7 @@ const Text = (props) => {
 
 const data = [
 	{
-		text: "Email: charles.trangay11@gmail.com",
+		text: "Email: charlestrangay@gmail.com",
 		icon: <EmailIcon fontSize="inherit" />,
 	},
 	{
