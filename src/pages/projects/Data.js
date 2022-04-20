@@ -7,7 +7,7 @@ export default [
 	{
 		image: projectBrochure,
 		alt: "pizza",
-		title: "Pizza brochure website",
+		title: "Pizza website",
 		description:
 			"This website was a redesign of a popular pizza website using HTML/CSS, Javascript and React.",
 		hrefWebsite: "https://brochure-app.vercel.app/",
